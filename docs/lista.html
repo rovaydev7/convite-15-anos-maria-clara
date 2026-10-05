@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#382537">
+  <meta name="description" content="Lista de presença dos quinze anos de Maria Clara.">
+  <title>Lista de presença | Maria Clara</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css">
+  <script src="./config.js"></script>
+  <script src="./list.js" defer></script>
+</head>
+<body class="list-page">
+<header class="site-header">
+  <a class="brand" href="./index.html" aria-label="Voltar ao convite de Maria Clara">
+    <span class="brand-mark" aria-hidden="true">MC</span>
+    <span class="brand-copy"><strong>Maria Clara</strong><span>15 anos</span></span>
+  </a>
+  <div class="header-actions">
+    <a class="header-link" href="./index.html">Voltar ao convite</a>
+    <button class="print-button" id="print-list" type="button" title="Imprimir lista" aria-label="Imprimir lista">Imprimir lista</button>
+  </div>
+</header>
+
+<section class="page-intro">
+  <div class="intro-inner">
+    <p class="eyebrow">31 de outubro de 2026 · 20 horas</p>
+    <h1>Lista de presença</h1>
+    <p class="event-line">Buffet Castelo Diamante</p>
+  </div>
+</section>
+
+<section class="summary" aria-label="Resumo das confirmações">
+  <div class="summary-item"><span class="summary-value" id="total-respostas">—</span><span class="summary-label">Respostas recebidas</span></div>
+  <div class="summary-item"><span class="summary-value" id="total-confirmados">—</span><span class="summary-label">Convidados confirmados</span></div>
+  <div class="summary-item"><span class="summary-value" id="total-pessoas">—</span><span class="summary-label">Total de pessoas confirmadas</span></div>
+  <div class="summary-item"><span class="summary-value" id="total-ausentes">—</span><span class="summary-label">Não poderão ir</span></div>
+</section>
+
+<main>
+  <div class="list-alert" id="list-status" role="status">Carregando confirmações…</div>
+  <div class="table-toolbar" id="table-toolbar" hidden>
+    <h2 class="table-title">Convidados</h2>
+    <div class="filter-controls">
+      <div class="filter-field">
+        <label for="filtro-nome">Buscar convidado</label>
+        <input id="filtro-nome" type="search" placeholder="Digite um nome" autocomplete="off">
+      </div>
+      <div class="filter-field">
+        <label for="filtro-presenca">Presença</label>
+        <select id="filtro-presenca">
+          <option value="todas">Todas</option>
+          <option value="sim">Confirmados</option>
+          <option value="nao">Não poderão ir</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <div class="empty-state" id="empty-state" hidden>Ainda não há confirmações registradas.</div>
+  <div class="table-wrap" id="table-wrap" hidden>
+    <table>
+      <caption class="sr-only">Respostas de presença para os 15 anos de Maria Clara</caption>
+      <thead><tr><th scope="col">Convidado</th><th scope="col">Presença</th><th scope="col">Acompanhantes</th><th scope="col">Confirmado em</th></tr></thead>
+      <tbody id="guest-list"></tbody>
+    </table>
+  </div>
+  <p class="no-results" id="no-results" hidden>Nenhum convidado corresponde aos filtros.</p>
+  <div class="table-foot" id="table-foot" hidden><span id="visible-count"></span><span>Ordenada pelas confirmações mais recentes</span></div>
+</main>
+
+<footer class="site-footer">
+  <p>Com carinho, família Rampin Rovay</p>
+  <p>Uma noite para guardar para sempre <span class="footer-mark" aria-hidden="true">✦</span></p>
+</footer>
+</body>
+</html>

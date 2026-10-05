@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b50">
+  <meta name="description" content="Confirme sua presença nos quinze anos de Maria Clara, em 31 de outubro de 2026.">
+  <link rel="canonical" href="https://www.15anosmariaclara.app.br/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Maria Clara | 15 anos">
+  <meta property="og:title" content="Maria Clara | 15 anos">
+  <meta property="og:description" content="Venha celebrar os 15 anos de Maria Clara! Uma noite de sonhos, encanto e magia, em 31 de outubro de 2026.">
+  <meta property="og:url" content="https://www.15anosmariaclara.app.br/">
+  <meta property="og:image" content="https://www.15anosmariaclara.app.br/docs/og-whatsapp.jpeg">
+  <meta property="og:image:url" content="https://www.15anosmariaclara.app.br/docs/og-whatsapp.jpeg">
+  <meta property="og:image:secure_url" content="https://www.15anosmariaclara.app.br/docs/og-whatsapp.jpeg">
+  <meta property="og:image:type" content="image/jpeg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Convite dos 15 anos de Maria Clara com castelo iluminado">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Maria Clara | 15 anos">
+  <meta name="twitter:description" content="Venha celebrar os 15 anos de Maria Clara em uma noite de sonhos, encanto e magia.">
+  <meta name="twitter:image" content="https://www.15anosmariaclara.app.br/docs/og-whatsapp.jpeg">
+  <title>Maria Clara | 15 anos</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;700&family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./styles.css?v=20261002-photo-search-top">
+  <script src="./config.js"></script>
+  <script src="./site.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+<header class="site-header">
+  <a class="brand" href="#inicio" aria-label="Maria Clara, quinze anos">
+    <span class="brand-mark" aria-hidden="true">MC</span>
+    <span class="brand-copy"><strong>Maria Clara</strong><span>15 anos</span></span>
+  </a>
+  <a class="header-link" href="./fotos.php">Procurar fotos</a>
+</header>
+
+<main id="conteudo">
+  <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+    <div class="hero-photo">
+      <img src="./convite.jpeg" alt="Convite dos 15 anos de Maria Clara: 31 de outubro de 2026, às 20 horas, no Castelo Diamante." fetchpriority="high">
+    </div>
+    <div class="hero-copy">
+      <p class="eyebrow">Convite especial</p>
+      <h1 id="titulo-principal">Maria <span>Clara</span></h1>
+      <p class="hero-subtitle">Uma noite de sonhos para celebrar 15 anos.</p>
+      <p class="hero-date">31 de outubro de 2026 · 20 horas</p>
+      <div class="hero-actions">
+        <a class="button-primary" href="#rsvp">Confirmar presença</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-titulo">
+    <div class="rsvp-layout">
+      <div class="rsvp-heading">
+        <p class="section-kicker">31 · 10 · 2026</p>
+        <h2 id="rsvp-titulo">Confirme sua presença</h2>
+        <p>Será uma alegria ter você com a gente. Confirme sua presença pelo formulário abaixo.</p>
+        <div class="calendar-countdown">
+          <div class="calendar-card">
+            <div class="calendar-heading"><span>Outubro</span><strong>2026</strong></div>
+            <div class="calendar-grid calendar-weekdays" aria-hidden="true"><span>Dom</span><span>Seg</span><span>Ter</span><span>Qua</span><span>Qui</span><span>Sex</span><span>Sab</span></div>
+            <div class="calendar-grid calendar-days" id="calendar-days" role="group" aria-label="Calendário de outubro de 2026"></div>
+          </div>
+          <div class="calendar-countdown-info" role="timer" aria-label="Dias restantes para a festa">
+            <strong id="countdown-days">--</strong>
+            <span>dias restantes</span>
+            <p class="calendar-until">31 out · 20h</p>
+          </div>
+        </div>
+        <p class="countdown-note">Uma noite de encanto e magia para celebrar meus 15 anos.</p>
+      </div>
+
+      <div>
+        <div class="form-alert" id="rsvp-status" role="status" hidden></div>
+        <form class="rsvp-form" id="rsvp-form" method="post" target="rsvp-response" novalidate>
+          <div class="form-field">
+            <label for="nome">Seu nome completo</label>
+            <input id="nome" name="nome" type="text" maxlength="120" autocomplete="name" placeholder="Como devemos chamar você?" required>
+          </div>
+          <fieldset class="form-field attendance-fieldset">
+            <legend class="field-label">Você poderá comparecer?</legend>
+            <div class="presence-options">
+              <div class="presence-option"><input id="presenca-sim" type="radio" name="presenca" value="sim" checked><label for="presenca-sim">Sim, estarei lá</label></div>
+              <div class="presence-option"><input id="presenca-nao" type="radio" name="presenca" value="nao"><label for="presenca-nao">Não poderei ir</label></div>
+            </div>
+          </fieldset>
+          <div class="form-field companions-field" id="campo-acompanhantes">
+            <label for="acompanhantes">Acompanhantes além de você</label>
+            <select id="acompanhantes" name="acompanhantes">
+              <option value="0">Somente eu</option>
+              <option value="1">1 acompanhante</option>
+              <option value="2">2 acompanhantes</option>
+              <option value="3">3 acompanhantes</option>
+              <option value="4">4 acompanhantes</option>
+              <option value="5">5 acompanhantes</option>
+              <option value="6">6 acompanhantes</option>
+            </select>
+          </div>
+          <div class="honeypot" aria-hidden="true"><label for="website">Deixe este campo vazio</label><input id="website" name="website" type="text" tabindex="-1" autocomplete="off"></div>
+          <button class="submit-button" id="rsvp-submit" type="submit">Enviar confirmação</button>
+          <p class="form-note">Sua resposta será usada somente para organizar a recepção da festa.</p>
+        </form>
+        <iframe class="response-frame" name="rsvp-response" id="rsvp-response" title="Resultado da confirmação" tabindex="-1"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <p>Com carinho, família Rampin Rovay</p>
+  <p><a href="./lista.html">Lista de presença</a> <span class="footer-mark" aria-hidden="true">✦</span></p>
+</footer>
+<dialog class="confirmation-dialog" id="confirmation-modal" aria-labelledby="confirmation-modal-title">
+  <p class="confirmation-ornament" aria-hidden="true">✦</p>
+  <p id="confirmation-modal-title">Confirmação recebida. Obrigada por fazer parte deste capítulo tão especial!</p>
+  <button class="confirmation-close" id="close-confirmation" type="button">Fechar</button>
+</dialog>
+</body>
+</html>

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#102b50"/>
+  <path d="M13 22l8 7 11-14 11 14 8-7-3 19H16z" fill="#e0c18b"/>
+  <path d="M17 44h30v4H17z" fill="#e0c18b"/>
+  <text x="32" y="59" fill="#fbfaf7" font-family="Georgia,serif" font-size="12" text-anchor="middle">MC</text>
+</svg>
